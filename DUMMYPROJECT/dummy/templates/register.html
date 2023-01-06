@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+
+</head>
+<body style="color:black; background-color:DodgerBlue;">
+<center><b>
+<h1>Registration</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+    User Name : &emsp;&emsp;&emsp;&emsp;<input type="text" name="user_name"><br><br>
+        First Name : &emsp;&emsp;&emsp;&emsp;<input type="text" name="first_name"><br><br>
+        Last Name : &emsp;&emsp;&emsp;&emsp;<input type="text" name="last_name"><br><br>
+        Email Id : &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<input type="email" name="e_mail"><br><br>
+        Password : &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<input type="password" name="pswd"><br><br>
+        Confirm Password : &nbsp;&nbsp;<input type="password" name="pswd1"><br><br>
+        <input type="submit" value="Register">
+
+
+          </form></b>
+    {% for i in messages %}
+    {{ i }}
+    {% endfor %}
+    </center>
+</body>
+</html>

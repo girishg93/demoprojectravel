@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        p
+        {
+        font-size:200%;
+        color:red;
+        font-family:courier;
+
+    </style>
+
+
+</head>
+<body style="color:black; background-color:#417171;">
+<center><h1 style="height:100px;width:300px;font-size:60px";>Login page</h1>
+<form action="" method="post">
+    {% csrf_token %}
+   <p> <b>User Name : <input style="height:50px;width:300px"; type="text" name="user_name"><br><br>
+    Password : &nbsp;<input style="height:50px;width:300px"; type="password" name="pswd"><br><br>
+    <input style="height:50px;width:100px; background-color: #4CAF50;font-size: 20px;color: white";  type="submit"  value="Login" >
+   </b> </p>
+</form>
+
+
+</center>
+</body>
+</html>
